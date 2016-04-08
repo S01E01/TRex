@@ -26,11 +26,6 @@ Stack::Stack(int refersTo, TimeMs win, CompKind kind) {
   this->refersTo = refersTo;
   this->kind = kind;
   this->win = win;
-  lookBackTo = new set<int>;
-  linkedNegations = new set<int>;
-}
-
-Stack::~Stack() {
-  delete lookBackTo;
-  delete linkedNegations;
+  lookBackTo = set<int>();
+  linkedNegations = set<int>();
 }

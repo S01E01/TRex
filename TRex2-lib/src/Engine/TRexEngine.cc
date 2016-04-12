@@ -73,7 +73,7 @@ void* processor(void* parShared) {
           }
         }
         if (lastState) {
-          s->stacksRule->find(i)->second->startComputation(s->pkt, s->result);
+          s->result = s->stacksRule->find(i)->second->startComputation(s->pkt);
         }
       }
     }
